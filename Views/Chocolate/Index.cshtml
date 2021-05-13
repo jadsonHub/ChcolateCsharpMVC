@@ -1,0 +1,76 @@
+@model IEnumerable<ProjetoChocolate.Models.Chocolate>
+
+@{
+    ViewData["Title"] = "Lista de Chocolates Cadastrados";
+}
+
+
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col-md-12 col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="text-center">Lista de Chocolates Cadastrados</h1><br />
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Marca
+                                </th>
+                                <th>
+                                    Porcentagem de Cacau
+                                </th>
+                                <th>
+                                    Tipo
+                                </th>
+                                <th>
+                                    Data de Validade
+                                </th>
+                                <th>
+                                    Preço
+                                </th>
+                                <th>
+                                    Porcentagem de Desconto
+                                </th>
+                                <th>
+                                    Opções
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Marca)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Porcent_Cacau)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Tipo)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Data_Validade)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Preco)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Porcent_Desconto)
+                                    </td>
+                                    <td>
+                                        <a asp-action="Edit" asp-route-id="@item.Id_Chocolate">Edit</a> |
+                                        <a asp-action="Details" asp-route-id="@item.Id_Chocolate">Details</a> |
+                                        <a asp-action="Delete" asp-route-id="@item.Id_Chocolate">Delete</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

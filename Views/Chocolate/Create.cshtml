@@ -1,0 +1,63 @@
+@model ProjetoChocolate.Models.Chocolate
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <h1 class="text-center">Cadastrar Chocolate</h1><br />
+            <div class="row justify-content-md-center">
+                <div class="col-md-6 col-lg-6">
+                    <hr />
+                    <form asp-action="Create">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group">
+                            <label asp-for="Marca" class="control-label">Marca</label>
+                            <input asp-for="Marca" class="form-control" />
+                            <span asp-validation-for="Marca" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Porcent_Cacau" class="control-label">Porcemtagem de Cacau</label>
+                            <input asp-for="Porcent_Cacau" class="form-control" />
+                            <span asp-validation-for="Porcent_Cacau" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Tipo" class="control-label">Tipo</label>
+                            <input asp-for="Tipo" class="form-control" />
+                            <span asp-validation-for="Tipo" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Data_Validade" class="control-label">Data de Validade</label>
+                            <input asp-for="Data_Validade" class="form-control" />
+                            <span asp-validation-for="Data_Validade" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Preco" class="control-label">Preço</label>
+                            <input asp-for="Preco" class="form-control" />
+                            <span asp-validation-for="Preco" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Porcent_Desconto" class="control-label">Porcentagem de Desconto</label>
+                            <select class="form-control" asp-for="Porcent_Desconto" type="number" class="form-control">
+                                <option value="0">0%</option>
+                                <option value="5">5%</option>
+                                <option value="10">10%</option>
+                                <option value="15">15%</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Create" class="btn btn-primary" />
+                        </div>
+                    </form>
+
+                    <div>
+                        <a asp-area="" asp-controller="Home" asp-action="Index">Voltar para o inicio </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

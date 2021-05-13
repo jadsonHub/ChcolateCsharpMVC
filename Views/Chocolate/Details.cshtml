@@ -1,0 +1,62 @@
+@model ProjetoChocolate.Models.Chocolate
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <h1 class="text-center">Detalhes do Chocolate</h1><br />
+            <div class="row justify-content-md-center">
+                <div class="col-md-12 col-lg-12">
+                    <hr />
+                    <dl class="row">
+                        <dt class="col-sm-2">
+                            Marca
+                        </dt>
+                        <dd class="col-sm-10">
+                            @Html.DisplayFor(model => model.Marca)
+                        </dd>
+                        <dt class="col-sm-2">
+                            Porcentagem de Cacau
+                        </dt>
+                        <dd class="col-sm-10">
+                            @Html.DisplayFor(model => model.Porcent_Cacau)
+                        </dd>
+                        <dt class="col-sm-2">
+                            Tipo
+                        </dt>
+                        <dd class="col-sm-10">
+                            @Html.DisplayFor(model => model.Tipo)
+                        </dd>
+                        <dt class="col-sm-2">
+                            Data de Validade
+                        </dt>
+                        <dd class="col-sm-10">
+                            @Html.DisplayFor(model => model.Data_Validade)
+                        </dd>
+                        <dt class="col-sm-2">
+                            @Html.DisplayNameFor(model => model.Preco)
+                        </dt>
+                        <dd class="col-sm-10">
+                            @Html.DisplayFor(model => model.Preco)
+                        </dd>
+                        <dt class="col-sm-2">
+                            Porcentagem de Desconto
+                        </dt>
+                        <dd class="col-sm-10">
+                            @Html.DisplayFor(model => model.Porcent_Desconto)
+                        </dd>
+                    </dl>
+                </div>
+                <div>
+                    <a asp-action="Edit" asp-route-id="@Model.Id_Chocolate">Edit</a> |
+                    <a asp-area="" asp-controller="Home" asp-action="Index">Voltar para o inicio </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div>
