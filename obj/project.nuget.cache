@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HbxWyrzIDTH7jwO5iGQTHuFwHVCN7uw/IB2pbhVkQhUwW0tnbI2MBrVxyVqRxQSy2djq9+Bx5HsjPsAwbdx2Rw==",
+  "dgSpecHash": "2t6TOn9NcagTIXUcak/TsfyrAq3DB8ZYTrL5kaiwCbForm7hrT9AO9ku4PjxHGKGyBj5YRyUqpcaGQ6Xlis0MQ==",
   "success": true,
-  "projectFilePath": "/home/pingulino/Downloads/ProjetoChocolate (3)/ProjetoChocolate.csproj",
+  "projectFilePath": "/home/pingulino/Downloads/ProjetosParaGit/ChocolateCsharpMVC/ProjetoChocolate.csproj",
   "expectedPackageFiles": [
     "/home/pingulino/.nuget/packages/microsoft.aspnetcore.html.abstractions/2.2.0/microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "/home/pingulino/.nuget/packages/microsoft.aspnetcore.razor/2.2.0/microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
@@ -164,16 +164,5 @@
     "/usr/share/dotnet/sdk/NuGetFallbackFolder/system.xml.xmldocument/4.3.0/system.xml.xmldocument.4.3.0.nupkg.sha512",
     "/usr/share/dotnet/sdk/NuGetFallbackFolder/system.xml.xmlserializer/4.3.0/system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "ProjetoChocolate depende de Pomelo.EntityFrameworkCore.MySql (>= 3.1.5), mas Pomelo.EntityFrameworkCore.MySql 3.1.5 não foi encontrado. A melhor correspondência aproximada de Pomelo.EntityFrameworkCore.MySql 3.2.0 foi resolvida.",
-      "libraryId": "Pomelo.EntityFrameworkCore.MySql",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  "logs": []
 }

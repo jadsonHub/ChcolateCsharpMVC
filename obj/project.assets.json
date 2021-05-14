@@ -8412,7 +8412,7 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.5",
       "Microsoft.VisualStudio.Web.CodeGenerators.Mvc >= 3.1.5",
       "Pomelo.EntityFrameworkCore.MySql.Design >= 1.1.2",
-      "Pomelo.EntityFrameworkCore.Mysql >= 3.1.5"
+      "Pomelo.EntityFrameworkCore.Mysql >= 3.2.0"
     ]
   },
   "packageFolders": {
@@ -8422,11 +8422,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/pingulino/Downloads/ProjetoChocolate (3)/ProjetoChocolate.csproj",
+      "projectUniqueName": "/home/pingulino/Downloads/ProjetosParaGit/ChocolateCsharpMVC/ProjetoChocolate.csproj",
       "projectName": "ProjetoChocolate",
-      "projectPath": "/home/pingulino/Downloads/ProjetoChocolate (3)/ProjetoChocolate.csproj",
+      "projectPath": "/home/pingulino/Downloads/ProjetosParaGit/ChocolateCsharpMVC/ProjetoChocolate.csproj",
       "packagesPath": "/home/pingulino/.nuget/packages/",
-      "outputPath": "/home/pingulino/Downloads/ProjetoChocolate (3)/obj/",
+      "outputPath": "/home/pingulino/Downloads/ProjetosParaGit/ChocolateCsharpMVC/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"
@@ -8478,7 +8478,7 @@
           },
           "Pomelo.EntityFrameworkCore.Mysql": {
             "target": "Package",
-            "version": "[3.1.5, )"
+            "version": "[3.2.0, )"
           }
         },
         "imports": [
@@ -8502,17 +8502,5 @@
         "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.409/RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "ProjetoChocolate depende de Pomelo.EntityFrameworkCore.MySql (>= 3.1.5), mas Pomelo.EntityFrameworkCore.MySql 3.1.5 não foi encontrado. A melhor correspondência aproximada de Pomelo.EntityFrameworkCore.MySql 3.2.0 foi resolvida.",
-      "libraryId": "Pomelo.EntityFrameworkCore.MySql",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  }
 }
